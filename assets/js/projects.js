@@ -20,9 +20,12 @@ const fetchJson = async (url) => {
 
 const normalizeProject = (item) => {
   const topics = Array.isArray(item.topics) ? item.topics : (item.tags || []);
+  const description = item.description && item.description.trim()
+    ? item.description.trim()
+    : 'A small shipped experiment — details in repo.';
   return {
     title: item.title || item.name || 'Untitled',
-    description: item.description || 'No description yet.',
+    description,
     repo: item.github || item.html_url || '',
     demo: item.demo || item.homepage || '',
     language: item.language || '',
