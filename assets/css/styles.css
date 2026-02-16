@@ -60,7 +60,10 @@
 body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 10% 10%, color-mix(in srgb, var(--accent) 6%, transparent), transparent 40%),
+    radial-gradient(circle at 90% 0%, color-mix(in srgb, var(--accent2) 6%, transparent), transparent 45%),
+    var(--bg);
   color: var(--fg);
   line-height: 1.65;
   font-size: 17px;
@@ -190,6 +193,7 @@ body {
   text-decoration: none;
   position: relative;
   font-size: var(--text-sm);
+  padding: 4px 2px;
 }
 
 .nav a::after,
@@ -352,6 +356,7 @@ h3 {
 }
 
 .card {
+  position: relative;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -360,9 +365,24 @@ h3 {
   transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
 }
 
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid color-mix(in srgb, var(--accent) 8%, transparent);
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease);
+  pointer-events: none;
+}
+
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover::after {
+  opacity: 1;
 }
 
 .card-grid {

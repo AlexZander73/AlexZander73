@@ -1,28 +1,55 @@
 [
   {
-    "title": "Field Notes Atlas",
-    "status": "public",
-    "description": "A lightweight travel log with offline-first notes.",
-    "tags": ["travel", "notes"],
-    "github": "https://github.com/AlexZander73/field-notes-atlas",
-    "demo": "https://alexzander73.github.io/field-notes-atlas",
-    "featured": true
-  },
-  {
-    "title": "Quiet Studio",
+    "title": "Local LLM Field Kit",
+    "description": "A lightweight local-LLM toolkit for private note search, summaries, and quick experiments.",
     "status": "wip",
-    "description": "Ambient work sessions with minimal controls.",
-    "tags": ["productivity", "audio"],
+    "tags": ["ai", "llm", "privacy"],
     "github": "",
     "demo": "",
     "featured": true
   },
   {
-    "title": "Slow Metrics",
+    "title": "Calm Automations",
+    "description": "Small, durable automations that remove friction from daily workflows.",
     "status": "public",
-    "description": "A small dashboard for habit snapshots.",
-    "tags": ["health", "data"],
-    "github": "https://github.com/AlexZander73/slow-metrics",
+    "tags": ["automation", "tools"],
+    "github": "",
+    "demo": "",
+    "featured": true
+  },
+  {
+    "title": "Atlas Notes",
+    "description": "A travel field-notes vault with offline-first capture and tags.",
+    "status": "public",
+    "tags": ["travel", "notes"],
+    "github": "",
+    "demo": "",
+    "featured": true
+  },
+  {
+    "title": "Godot Micro-Worlds",
+    "description": "Prototype environments and micro-interactions in Godot for feel-first UX experiments.",
+    "status": "wip",
+    "tags": ["godot", "prototyping"],
+    "github": "",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "title": "Lightweight Web Products",
+    "description": "Static-first products that load fast and age well.",
+    "status": "public",
+    "tags": ["web", "performance"],
+    "github": "",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "title": "Travel Signal",
+    "description": "A minimal system for tracking routes, maps, and notes with zero bloat.",
+    "status": "wip",
+    "tags": ["travel", "systems"],
+    "github": "",
     "demo": "",
     "featured": false
   }
