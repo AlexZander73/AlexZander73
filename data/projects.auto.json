@@ -2,18 +2,18 @@
   {
     "name": "AlexZander73",
     "html_url": "https://github.com/AlexZander73/AlexZander73",
-    "description": null,
+    "description": "This repo hosts the GitHub Pages site: https://alexzander73.github.io/",
     "homepage": null,
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2026-02-16T09:27:39Z",
+    "pushed_at": "2026-02-16T09:43:27Z",
     "topics": [],
     "open_issues_count": 0
   },
   {
     "name": "TuxbornWebsite",
     "html_url": "https://github.com/AlexZander73/TuxbornWebsite",
-    "description": null,
+    "description": "This repository builds a modern documentation site from the **GitHub Wiki** for Tuxborn. The wiki remains the source of truth \u2014 maintainers keep editing Mark...",
     "homepage": null,
     "language": "Python",
     "stargazers_count": 0,
@@ -24,12 +24,13 @@
   {
     "name": "WordSearch",
     "html_url": "https://github.com/AlexZander73/WordSearch",
-    "description": null,
+    "description": "A polished word search game with crisp visuals and low-maintenance updates.",
     "homepage": null,
     "language": "JavaScript",
     "stargazers_count": 0,
     "pushed_at": "2026-02-08T08:56:16Z",
     "topics": [],
-    "open_issues_count": 0
+    "open_issues_count": 0,
+    "featured": true
   }
 ]
