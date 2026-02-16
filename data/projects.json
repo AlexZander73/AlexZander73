@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Field Notes Atlas",
+    "status": "public",
+    "description": "A lightweight travel log with offline-first notes.",
+    "tags": ["travel", "notes"],
+    "github": "https://github.com/AlexZander73/field-notes-atlas",
+    "demo": "https://alexzander73.github.io/field-notes-atlas",
+    "featured": true
+  },
+  {
+    "title": "Quiet Studio",
+    "status": "wip",
+    "description": "Ambient work sessions with minimal controls.",
+    "tags": ["productivity", "audio"],
+    "github": "",
+    "demo": "",
+    "featured": true
+  },
+  {
+    "title": "Slow Metrics",
+    "status": "public",
+    "description": "A small dashboard for habit snapshots.",
+    "tags": ["health", "data"],
+    "github": "https://github.com/AlexZander73/slow-metrics",
+    "demo": "",
+    "featured": false
+  }
+]

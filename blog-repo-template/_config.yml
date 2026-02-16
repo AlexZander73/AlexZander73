@@ -1,0 +1,16 @@
+title: Zach Alexander — Blog
+email: hello@example.com
+description: >-
+  Travel notes, field observations, and experiments.
+baseurl: ""
+url: "https://YOURBLOG.github.io"
+
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+
+collections:
+  posts:
+    output: true
