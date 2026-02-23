@@ -1,12 +1,34 @@
 [
   {
+    "name": "CarpenterToolboxApp",
+    "html_url": "https://github.com/AlexZander73/CarpenterToolboxApp",
+    "description": "Carpentry Companion (AU) is a GitHub Pages\u2013deployable, offline-ready study and calculation app for Australian carpentry students. It keeps all educational co...",
+    "homepage": null,
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "pushed_at": "2026-02-20T13:34:20Z",
+    "topics": [],
+    "open_issues_count": 0
+  },
+  {
+    "name": "WeatherApp",
+    "html_url": "https://github.com/AlexZander73/WeatherApp",
+    "description": "Fast, clean weather app using Open-Meteo with geolocation and city search.",
+    "homepage": null,
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "pushed_at": "2026-02-19T09:48:49Z",
+    "topics": [],
+    "open_issues_count": 0
+  },
+  {
     "name": "AlexZander73",
     "html_url": "https://github.com/AlexZander73/AlexZander73",
     "description": "This repo hosts the GitHub Pages site: https://alexzander73.github.io/",
     "homepage": null,
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2026-02-16T09:43:27Z",
+    "pushed_at": "2026-02-16T09:43:37Z",
     "topics": [],
     "open_issues_count": 0
   },
@@ -27,7 +49,7 @@
     "description": "A polished word search game with crisp visuals and low-maintenance updates.",
     "homepage": null,
     "language": "JavaScript",
-    "stargazers_count": 0,
+    "stargazers_count": 1,
     "pushed_at": "2026-02-08T08:56:16Z",
     "topics": [],
     "open_issues_count": 0,
