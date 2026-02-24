@@ -1,45 +1,32 @@
 # Zach Alexander
 
-This repo hosts the GitHub Pages site: https://alexzander73.github.io/
+I build calm, durable software that feels premium and stays lightweight over time. My work blends AI-assisted tools, local LLM experiments, and automation with a focus on clarity, longevity, and quiet performance.
 
-## Quick Start
+## What I Build
 
-Open `index.html` in a browser, or serve locally:
+- AI-assisted apps that reduce cognitive load and make complex workflows feel simple
+- Local LLM experiments for private, offline-first notes, search, and summaries
+- Automation and utilities that remove friction without adding bloat
+- Godot prototypes to explore feel-first micro-interactions
+- Lightweight web products that load fast and age well
+- Travel field notes and systems for routes, maps, and observations
 
-```bash
-python3 -m http.server 8000
-```
+## Values
 
-## Customize
+- Calm UX over noise
+- Durable systems over trends
+- Ship small, iterate fast
+- Fewer features, better execution
 
-- **Colors / tokens**: `assets/css/styles.css`
-- **Hero + copy**: `index.html`
-- **Projects fallback data**: `data/projects.json`
-- **Now page**: `now.html`
-- **Contact links**: `contact.html`
+## Current Focus
 
-### Blog Feed
+- Prototyping AI-assisted workflows with local models
+- Building a field-notes system for travel capture
+- Refining a portfolio of small, resilient products
 
-Update `assets/js/latest-blog.js`:
-- `BLOG_FEED_URL` → your blog `/feed.xml`
-- `BLOG_HOME_URL` → blog homepage
+## Links
 
-## Auto Project Sync (GitHub Actions)
-
-A workflow updates `data/projects.auto.json` from the GitHub API.
-
-- Runs on push to `main` and weekly schedule.
-- Filters out forks and archived repos.
-- Uses `GITHUB_TOKEN` (no extra secrets needed).
-
-If the auto file is missing or fails to load, the site falls back to `data/projects.json`.
-
-## Enable Pages
-
-1. Repo Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main` / Folder: `/ (root)`
-
-## Motion Settings
-
-All animations respect `prefers-reduced-motion`.
+- Site: https://alexzander73.github.io/
+- Projects: https://alexzander73.github.io/projects.html
+- Now: https://alexzander73.github.io/now.html
+- GitHub: https://github.com/AlexZander73
