@@ -1,0 +1,78 @@
+name: Build Products Catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "products/**"
+      - ".github/workflows/products-catalog.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate products catalog
+        run: |
+          python3 - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          root = Path("products")
+          out_path = root / "catalog.json"
+
+          def pick(pattern, text):
+              match = re.search(pattern, text, re.IGNORECASE)
+              return match.group(1).strip() if match else ""
+
+          products = []
+          for html_path in sorted(root.glob("*/index.html")):
+              slug = html_path.parent.name
+              if slug == "index":
+                  continue
+
+              html = html_path.read_text(encoding="utf-8")
+              title = pick(r'<meta\\s+property=["\\\']og:title["\\\']\\s+content=["\\\']([^"\\\']+)', html) \
+                  or pick(r'<title>([^<]+)</title>', html)
+              blurb = pick(r'<meta\\s+name=["\\\']product:blurb["\\\']\\s+content=["\\\']([^"\\\']+)', html) \
+                  or pick(r'<meta\\s+name=["\\\']description["\\\']\\s+content=["\\\']([^"\\\']+)', html)
+              image = pick(r'<meta\\s+name=["\\\']product:image["\\\']\\s+content=["\\\']([^"\\\']+)', html) \
+                  or pick(r'<meta\\s+property=["\\\']og:image["\\\']\\s+content=["\\\']([^"\\\']+)', html)
+              platforms = pick(r'<meta\\s+name=["\\\']product:platforms["\\\']\\s+content=["\\\']([^"\\\']+)', html)
+
+              if image and not image.startswith(("http://", "https://", "/")):
+                  image = f"/products/{slug}/{image.lstrip('./')}"
+
+              support_path = root / slug / "support" / "index.html"
+              support_url = f"/products/{slug}/support/" if support_path.exists() else ""
+
+              products.append({
+                  "slug": slug,
+                  "title": title or slug.replace("-", " ").title(),
+                  "blurb": blurb or "Product details coming soon.",
+                  "image": image or "/assets/img/og-default.svg",
+                  "url": f"/products/{slug}/",
+                  "support_url": support_url,
+                  "platforms": platforms
+              })
+
+          out_path.write_text(json.dumps(products, indent=2) + "\\n", encoding="utf-8")
+          PY
+
+      - name: Commit catalog if changed
+        run: |
+          if git diff --quiet -- products/catalog.json; then
+            echo "No catalog changes"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add products/catalog.json
+            git commit -m "Update products catalog"
+            git push
+          fi

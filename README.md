@@ -28,5 +28,6 @@ I build calm, durable software that feels premium and stays lightweight over tim
 
 - Site: https://alexzander73.github.io/
 - Projects: https://alexzander73.github.io/projects.html
+- Products: https://alexzander73.github.io/products/
 - Now: https://alexzander73.github.io/now.html
 - GitHub: https://github.com/AlexZander73
