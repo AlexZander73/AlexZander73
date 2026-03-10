@@ -21,15 +21,36 @@ jobs:
         run: |
           python3 - <<'PY'
           import json
-          import re
           from pathlib import Path
+          from html.parser import HTMLParser
 
           root = Path("products")
           out_path = root / "catalog.json"
 
-          def pick(pattern, text):
-              match = re.search(pattern, text, re.IGNORECASE)
-              return match.group(1).strip() if match else ""
+          class MetaParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.meta = {}
+                  self.title = ""
+                  self._in_title = False
+
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag.lower() == "meta":
+                      key = attrs.get("name") or attrs.get("property")
+                      value = attrs.get("content", "").strip()
+                      if key and value:
+                          self.meta[key.lower()] = value
+                  elif tag.lower() == "title":
+                      self._in_title = True
+
+              def handle_endtag(self, tag):
+                  if tag.lower() == "title":
+                      self._in_title = False
+
+              def handle_data(self, data):
+                  if self._in_title:
+                      self.title += data
 
           products = []
           for html_path in sorted(root.glob("*/index.html")):
@@ -38,13 +59,13 @@ jobs:
                   continue
 
               html = html_path.read_text(encoding="utf-8")
-              title = pick(r'<meta\\s+property=["\\\']og:title["\\\']\\s+content=["\\\']([^"\\\']+)', html) \
-                  or pick(r'<title>([^<]+)</title>', html)
-              blurb = pick(r'<meta\\s+name=["\\\']product:blurb["\\\']\\s+content=["\\\']([^"\\\']+)', html) \
-                  or pick(r'<meta\\s+name=["\\\']description["\\\']\\s+content=["\\\']([^"\\\']+)', html)
-              image = pick(r'<meta\\s+name=["\\\']product:image["\\\']\\s+content=["\\\']([^"\\\']+)', html) \
-                  or pick(r'<meta\\s+property=["\\\']og:image["\\\']\\s+content=["\\\']([^"\\\']+)', html)
-              platforms = pick(r'<meta\\s+name=["\\\']product:platforms["\\\']\\s+content=["\\\']([^"\\\']+)', html)
+              parser = MetaParser()
+              parser.feed(html)
+
+              title = parser.meta.get("og:title") or parser.title.strip()
+              blurb = parser.meta.get("product:blurb") or parser.meta.get("description")
+              image = parser.meta.get("product:image") or parser.meta.get("og:image")
+              platforms = parser.meta.get("product:platforms", "")
 
               if image and not image.startswith(("http://", "https://", "/")):
                   image = f"/products/{slug}/{image.lstrip('./')}"

@@ -1,11 +1,11 @@
 [
   {
     "slug": "carpentry-companion",
-    "title": "Carpentry Companion (AU) | Azure Dreams Studio",
-    "blurb": "Product details coming soon.",
-    "image": "/assets/img/og-default.svg",
+    "title": "Carpentry Companion (AU)",
+    "blurb": "Offline-first carpentry study and planning app with calculators, job workflows, and export tools.",
+    "image": "/products/carpentry-companion/assets/hero.svg",
     "url": "/products/carpentry-companion/",
     "support_url": "/products/carpentry-companion/support/",
-    "platforms": ""
+    "platforms": "iPhone, iPad, Mac"
   }
-]\n
+]
