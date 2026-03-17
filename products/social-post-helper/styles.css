@@ -98,6 +98,13 @@ a {
   text-transform: uppercase;
 }
 
+.trace-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: flex-end;
+}
+
 .trace-back {
   text-decoration: none;
   padding-bottom: 0.18rem;
@@ -535,6 +542,11 @@ details p {
     padding-top: 0.9rem;
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .trace-links {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 

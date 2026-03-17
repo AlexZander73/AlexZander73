@@ -66,11 +66,19 @@ button:focus-visible {
   color: var(--muted);
 }
 
+.topbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
 .topbar a {
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .hero {

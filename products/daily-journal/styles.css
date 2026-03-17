@@ -90,11 +90,33 @@ summary:focus-visible {
 }
 
 .ledger-backlink,
-.ledger-topbar-note {
+.ledger-topbar-note,
+.ledger-topbar-links a {
   font-size: 0.83rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.ledger-topbar-note {
+  margin: 0;
+}
+
+.ledger-topbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: flex-end;
+}
+
+.ledger-topbar-links a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.ledger-topbar-links a:hover,
+.ledger-topbar-links a:focus-visible {
+  border-bottom-color: var(--clay);
 }
 
 .ledger-backlink {
@@ -504,6 +526,12 @@ h3 {
   .ledger-topbar {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
+    row-gap: 0.5rem;
+  }
+
+  .ledger-topbar-links {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .feature-ledger,

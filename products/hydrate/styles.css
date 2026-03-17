@@ -82,12 +82,14 @@ img {
 
 .back-current,
 .status-bead,
-.topbar-brand {
+.topbar-brand,
+.topbar-link {
   font-size: 0.95rem;
 }
 
 .back-current,
-.status-bead {
+.status-bead,
+.topbar-link {
   color: var(--muted);
   text-decoration: none;
 }
@@ -109,11 +111,29 @@ img {
   letter-spacing: 0.02em;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .status-bead {
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: rgba(22, 48, 71, 0.56);
+}
+
+.topbar-link {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 12px;
+}
+
+.topbar-link:hover,
+.topbar-link:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 main {
@@ -492,6 +512,10 @@ summary:focus-visible {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: start;
+  }
+
+  .topbar-actions {
+    flex-wrap: wrap;
   }
 
   .hero-copy,

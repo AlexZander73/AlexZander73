@@ -102,6 +102,12 @@ a {
   font-weight: 700;
 }
 
+.bec-toprail-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .bec-toprail-state {
   margin: 0;
   border-radius: 999px;
@@ -111,6 +117,27 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 5px 10px;
+}
+
+.bec-toprail-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bec-toplink {
+  border: 1px solid rgba(140, 171, 214, 0.42);
+  border-radius: 999px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--bec-text-dim);
+}
+
+.bec-toplink:hover,
+.bec-toplink:focus-visible {
+  color: var(--bec-text);
+  border-color: var(--bec-line-strong);
 }
 
 .bec-main {
@@ -452,6 +479,7 @@ a {
 
 .bec-cta,
 .bec-back,
+.bec-toplink,
 .bec-faq details,
 .bec-feature-grid li,
 .bec-workflow-grid article {
@@ -508,6 +536,24 @@ summary:focus-visible {
 
   .bec-toprail-name {
     display: none;
+  }
+
+  .bec-toprail-right {
+    margin-left: auto;
+    gap: 6px;
+  }
+
+  .bec-toprail-state {
+    display: none;
+  }
+
+  .bec-toprail-links {
+    gap: 6px;
+  }
+
+  .bec-toplink {
+    padding: 4px 8px;
+    font-size: 11px;
   }
 
   .bec-main {

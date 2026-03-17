@@ -102,6 +102,13 @@ a {
   border-bottom: 1px solid transparent;
 }
 
+.moonbar__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
 .moonbar__crest {
   display: flex;
   align-items: center;
@@ -460,6 +467,10 @@ a {
   .moonbar__crest {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .moonbar__links {
+    justify-content: flex-start;
   }
 
   .aperture {
