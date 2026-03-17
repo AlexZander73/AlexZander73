@@ -4,31 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Uses — Zach Alexander</title>
-  <meta name="description" content="The tools, workflow, and stack Zach Alexander uses for products, experiments, and lightweight publishing." />
+  <meta name="description" content="The tools and workflow principles Zach Alexander relies on for durable, low-maintenance software." />
   <link rel="canonical" href="https://alexzander73.github.io/uses.html" />
-  <meta property="og:title" content="Uses" />
-  <meta property="og:description" content="The tools, workflow, and stack Zach Alexander uses for products, experiments, and lightweight publishing." />
+  <meta property="og:title" content="Uses — Zach Alexander" />
+  <meta property="og:description" content="Tools and workflow principles behind Zach Alexander's builder studio." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexzander73.github.io/uses.html" />
   <meta property="og:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Uses" />
-  <meta name="twitter:description" content="The tools, workflow, and stack Zach Alexander uses for products, experiments, and lightweight publishing." />
+  <meta name="twitter:title" content="Uses — Zach Alexander" />
+  <meta name="twitter:description" content="Tools and workflow principles behind Zach Alexander's builder studio." />
   <meta name="twitter:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <link rel="icon" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
-<body class="page">
+<body class="page page-uses">
   <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <a href="index.html" class="brand-link">ZA</a>
-        <span class="brand-text">Zach Alexander</span>
-      </div>
-      <nav class="nav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ZA</span>
+        <span class="brand-meta">
+          <strong>Zach Alexander</strong>
+          <span>Builder Studio</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
         <a href="projects.html">Projects</a>
         <a href="products/">Products</a>
         <a href="notes.html">Notes</a>
@@ -44,90 +48,89 @@
     </div>
   </header>
 
-  <main id="content" class="container">
-    <section class="section reveal">
-      <div class="page-intro">
-        <p class="eyebrow">Uses</p>
-        <h1>Tools I keep reaching for</h1>
-        <p class="lead">The common thread is durability. I prefer tools that can survive travel, handoffs, quiet months, and low-maintenance publishing without becoming a project of their own.</p>
-      </div>
+  <main id="content" class="page-main container">
+    <section class="page-hero reveal">
+      <p class="kicker">Uses</p>
+      <h1>A practical toolkit for calm, maintainable work.</h1>
+      <p class="lede">This is not a gear flex list. It is the stack and operating posture behind the studio: lightweight where possible, explicit where trust matters.</p>
     </section>
 
-    <section class="section section--tint reveal">
-      <div class="section-header">
-        <h2>Daily Build Environment</h2>
+    <section class="section reveal" aria-labelledby="foundation-title">
+      <div class="section-head">
+        <h2 id="foundation-title">Foundation stack</h2>
       </div>
       <div class="stack-grid">
-        <article class="stack-card">
-          <span class="stack-label">Platform</span>
-          <h3>macOS, Git, VS Code</h3>
-          <p class="stack-copy">A simple local setup with Git at the center. I want the filesystem, repo state, and deployment path to stay legible.</p>
+        <article class="card">
+          <h3>Code + editing</h3>
+          <p class="stack-copy">VS Code, terminal-first workflows, and Git as the ground truth for change and rollback.</p>
         </article>
-        <article class="stack-card">
-          <span class="stack-label">Publishing</span>
-          <h3>GitHub + GitHub Pages</h3>
-          <p class="stack-copy">For personal surfaces, app support pages, and static documentation, Pages gives me durability without another backend to nurse.</p>
+        <article class="card">
+          <h3>Publishing</h3>
+          <p class="stack-copy">GitHub Pages for durable public surfaces with low ops overhead and clear deployment behavior.</p>
         </article>
-        <article class="stack-card">
-          <span class="stack-label">Web Stack</span>
-          <h3>Plain HTML, CSS, and JS</h3>
-          <p class="stack-copy">I use frameworks when they earn their place. For this site and adjacent product surfaces, static-first wins on speed and upkeep.</p>
+        <article class="card">
+          <h3>Site architecture</h3>
+          <p class="stack-copy">Plain HTML/CSS/JS with small JSON files and scripts where automation genuinely removes repetitive work.</p>
         </article>
       </div>
     </section>
 
-    <section class="section reveal">
-      <div class="section-header">
-        <h2>AI and Automation</h2>
-      </div>
-      <div class="split-panel">
-        <div class="soft-panel">
-          <h3>Local-first AI workflow</h3>
-          <ul class="stack-list">
-            <li><strong>Scope narrowly.</strong> I use local models for summarisation, retrieval, and small decision-support loops, not vague magic demos.</li>
-            <li><strong>Keep outputs checkable.</strong> Fast verification matters more than flashy generation.</li>
-            <li><strong>Stay private by default.</strong> If the task involves personal notes or sensitive drafts, local-first is the default posture.</li>
-          </ul>
+    <section class="section reveal" aria-labelledby="principles-title">
+      <div class="section-band">
+        <div class="section-head">
+          <h2 id="principles-title">Workflow principles</h2>
         </div>
-        <div class="soft-panel">
-          <h3>Automation rules</h3>
-          <ul class="stack-list">
-            <li><strong>Only automate the boring parts.</strong> Syncing catalogs, publishing static assets, and reducing repeated setup all qualify.</li>
-            <li><strong>Prefer small scripts.</strong> I trust a readable file and a single-purpose workflow more than a sprawling platform.</li>
-            <li><strong>Graceful failure is mandatory.</strong> If an automation breaks, the underlying site or product still needs to work.</li>
+        <ul class="stack-list">
+          <li><strong>Prefer simple systems:</strong> fewer moving parts usually means better uptime and cleaner handoffs.</li>
+          <li><strong>Automate selectively:</strong> catalog generation, feed rendering, and repetitive sync jobs are good automation targets.</li>
+          <li><strong>Keep failure visible:</strong> if an integration fails, the site should still function and communicate clearly.</li>
+          <li><strong>Stay local when useful:</strong> private drafts and focused model work benefit from local-first workflows.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="tool-groups-title">
+      <div class="section-head">
+        <h2 id="tool-groups-title">Current tool groups</h2>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Software tools</h3>
+          <ul class="reading-list">
+            <li><strong>GitHub:</strong> source control, issue tracking, and publishing routes.</li>
+            <li><strong>Python scripts:</strong> lightweight content syncing and data generation tasks.</li>
+            <li><strong>Vanilla JS:</strong> progressive enhancement for filters, feed widgets, and transitions.</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--tint reveal">
-      <div class="section-header">
-        <h2>Product Workflow</h2>
-      </div>
-      <ul class="reading-list">
-        <li><strong>Static marketing and support.</strong> Public support, privacy, and product pages live comfortably as static files when the structure is clear.</li>
-        <li><strong>JSON where it helps.</strong> Small data files are enough for projects, changelogs, and catalogs without dragging in a CMS.</li>
-        <li><strong>Markdown for longer writing.</strong> Blog posts and reference notes belong in simple source formats that stay portable.</li>
-        <li><strong>Godot for feel studies.</strong> When I want to explore interaction or atmosphere, I'd rather prototype quickly than over-spec the idea.</li>
-      </ul>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-header">
-        <h2>Field Kit</h2>
-      </div>
-      <div class="card">
-        <p>I'm biased toward setups that still make sense away from a perfect desk: offline notes, small files, dependable publishing, and products that keep working even if the internet gets flaky. That bias shows up in how I write, prototype, and ship.</p>
+        </article>
+        <article class="card">
+          <h3>Physical + planning tools</h3>
+          <ul class="reading-list">
+            <li><strong>Notebook capture:</strong> quick route notes and system sketches before formal structuring.</li>
+            <li><strong>Desk workflow:</strong> small, repeatable setup that supports shipping without setup drag.</li>
+            <li><strong>Field context:</strong> travel and site conditions influence reliability decisions in product design.</li>
+          </ul>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Zach Alexander</p>
-    <div class="footer-links">
-      <a href="notes.html">Notes</a>
-      <a href="lab.html">Lab</a>
-      <a href="uses.html">Uses</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Zach Alexander</strong>
+        <p>Uses page for stack choices, workflow principles, and durable tooling decisions.</p>
+        <p class="subtle">© <span id="year"></span> Zach Alexander</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="products/">Products</a>
+        <a href="notes.html">Notes</a>
+        <a href="lab.html">Lab</a>
+        <a href="now.html">Now</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </footer>
 </body>

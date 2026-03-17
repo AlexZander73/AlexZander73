@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Zach Alexander</title>
-  <meta name="description" content="Selected projects, experiments, and tools by Zach Alexander." />
+  <meta name="description" content="Curated projects, systems, and experiments by Zach Alexander." />
   <link rel="canonical" href="https://alexzander73.github.io/projects.html" />
-  <meta property="og:title" content="Projects" />
-  <meta property="og:description" content="Selected projects, experiments, and tools by Zach Alexander." />
+  <meta property="og:title" content="Projects — Zach Alexander" />
+  <meta property="og:description" content="Curated projects, systems, and experiments by Zach Alexander." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexzander73.github.io/projects.html" />
   <meta property="og:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Projects" />
-  <meta name="twitter:description" content="Selected projects, experiments, and tools by Zach Alexander." />
+  <meta name="twitter:title" content="Projects — Zach Alexander" />
+  <meta name="twitter:description" content="Curated projects, systems, and experiments by Zach Alexander." />
   <meta name="twitter:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <link rel="icon" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
@@ -21,15 +21,19 @@
   <script defer src="assets/js/main.js"></script>
   <script defer src="assets/js/projects.js"></script>
 </head>
-<body class="page">
+<body class="page page-projects">
   <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <a href="index.html" class="brand-link">ZA</a>
-        <span class="brand-text">Zach Alexander</span>
-      </div>
-      <nav class="nav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ZA</span>
+        <span class="brand-meta">
+          <strong>Zach Alexander</strong>
+          <span>Builder Studio</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
         <a href="projects.html" aria-current="page">Projects</a>
         <a href="products/">Products</a>
         <a href="notes.html">Notes</a>
@@ -45,32 +49,67 @@
     </div>
   </header>
 
-  <main id="content" class="container">
-    <section class="section reveal">
-      <h1>Projects</h1>
-      <p class="lead">A curated set of tools, experiments, and systems I keep shipping.</p>
-
-      <div class="filters">
-        <div id="project-languages" class="filter-group"></div>
-        <div id="project-tags" class="filter-group"></div>
-        <div id="project-status" class="filter-group"></div>
-        <button class="chip" data-clear-filters>Clear filters</button>
+  <main id="content" class="page-main container">
+    <section class="page-hero reveal">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Projects</p>
+          <h1>Products, systems, and experiments with real utility.</h1>
+          <p class="lede">This page pulls from current public work. Some entries are polished products, others are infrastructure or active experiments still being shaped.</p>
+          <p class="focus-inline"><strong>Read this list as:</strong> practical output first, experimentation second, with a clear path between the two.</p>
+        </div>
+        <aside class="hero-aside">
+          <p class="eyebrow">Auto-updated</p>
+          <p>Project data syncs from public repositories, with manual fallback data to keep the page stable.</p>
+        </aside>
       </div>
+    </section>
 
-      <div id="projects" class="card-grid grid"></div>
+    <section class="section reveal" aria-labelledby="filters-title">
+      <div class="section-head">
+        <h2 id="filters-title">Filter the project list</h2>
+      </div>
+      <div class="panel">
+        <div class="filters">
+          <div id="project-languages" class="filter-group" aria-label="Language filters"></div>
+          <div id="project-tags" class="filter-group" aria-label="Tag filters"></div>
+          <div id="project-status" class="filter-group" aria-label="Status filters"></div>
+          <button class="chip" data-clear-filters>Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="results-title">
+      <div class="section-head">
+        <h2 id="results-title">Current results</h2>
+      </div>
+      <div id="projects" class="card-grid grid" aria-live="polite"></div>
       <div id="projects-empty" class="card" style="display: none;">
-        <p>No projects match those filters.</p>
-        <button class="button ghost" data-clear-filters>Clear filters</button>
+        <p class="subtle">No projects match those filters right now.</p>
+        <div class="card-actions">
+          <button class="button ghost" data-clear-filters>Clear filters</button>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Zach Alexander</p>
-    <div class="footer-links">
-      <a href="notes.html">Notes</a>
-      <a href="lab.html">Lab</a>
-      <a href="uses.html">Uses</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Zach Alexander</strong>
+        <p>Project surface for shipped tools, practical systems, and ongoing experiments.</p>
+        <p class="subtle">© <span id="year"></span> Zach Alexander</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="products/">Products</a>
+        <a href="notes.html">Notes</a>
+        <a href="lab.html">Lab</a>
+        <a href="uses.html">Uses</a>
+        <a href="now.html">Now</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </footer>
 </body>

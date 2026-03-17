@@ -4,31 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Now — Zach Alexander</title>
-  <meta name="description" content="What Zach Alexander is focused on now." />
+  <meta name="description" content="What Zach Alexander is focused on right now." />
   <link rel="canonical" href="https://alexzander73.github.io/now.html" />
-  <meta property="og:title" content="Now" />
-  <meta property="og:description" content="What Zach Alexander is focused on now." />
+  <meta property="og:title" content="Now — Zach Alexander" />
+  <meta property="og:description" content="Current focus areas and active direction for Zach Alexander's builder studio." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexzander73.github.io/now.html" />
   <meta property="og:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Now" />
-  <meta name="twitter:description" content="What Zach Alexander is focused on now." />
+  <meta name="twitter:title" content="Now — Zach Alexander" />
+  <meta name="twitter:description" content="Current focus areas and active direction for Zach Alexander's builder studio." />
   <meta name="twitter:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <link rel="icon" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
-<body class="page">
+<body class="page page-now">
   <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <a href="index.html" class="brand-link">ZA</a>
-        <span class="brand-text">Zach Alexander</span>
-      </div>
-      <nav class="nav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ZA</span>
+        <span class="brand-meta">
+          <strong>Zach Alexander</strong>
+          <span>Builder Studio</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
         <a href="projects.html">Projects</a>
         <a href="products/">Products</a>
         <a href="notes.html">Notes</a>
@@ -44,28 +48,66 @@
     </div>
   </header>
 
-  <main id="content" class="container">
-    <section class="section reveal">
-      <h1>Now</h1>
-      <p class="muted">Updated: March 17, 2026</p>
-      <div class="card">
+  <main id="content" class="page-main container">
+    <section class="page-hero reveal">
+      <p class="kicker">Now</p>
+      <h1>Current direction and active momentum.</h1>
+      <p class="lede">This page is a live snapshot of what is being built, refined, and tested right now.</p>
+      <p class="focus-inline"><strong>Updated:</strong> March 17, 2026</p>
+    </section>
+
+    <section class="section reveal" aria-labelledby="focus-title">
+      <div class="section-head">
+        <h2 id="focus-title">Current focus tracks</h2>
+      </div>
+      <div class="stack-grid">
+        <article class="card">
+          <h3>Local AI workflows</h3>
+          <p class="stack-copy">Tight, practical model-assisted flows for notes, retrieval, and context drafting that stay verifiable.</p>
+        </article>
+        <article class="card">
+          <h3>Durable product surfaces</h3>
+          <p class="stack-copy">Keeping product, support, and policy routes clear and maintainable as more products are added.</p>
+        </article>
+        <article class="card">
+          <h3>Physical-digital bridge</h3>
+          <p class="stack-copy">Exploring how software tools can better support real-world making and on-site problem-solving.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="weekly-rhythm-title">
+      <div class="section-band">
+        <div class="section-head">
+          <h2 id="weekly-rhythm-title">Weekly rhythm</h2>
+        </div>
         <ul class="focus-list">
-          <li>Expanding this site into a fuller HQ with notes, lab work, product surfaces, and a clearer proof trail.</li>
-          <li>Prototyping calm AI-assisted workflows with local models and tightly scoped tasks that can be checked quickly.</li>
-          <li>Refining Carpentry Companion (AU) as a serious offline-first product with strong public support and compliance surfaces.</li>
-          <li>Building a field-notes system for travel, routes, and observations that can survive long gaps and low bandwidth.</li>
-          <li>Keeping the stack deliberately simple so future updates stay fast instead of turning into maintenance debt.</li>
+          <li>Ship one concrete improvement to a live surface each week.</li>
+          <li>Keep one experimental track active without letting it consume the whole roadmap.</li>
+          <li>Capture field notes from real use and fold them back into product decisions.</li>
+          <li>Protect simplicity: avoid adding more moving parts than the system can comfortably carry.</li>
         </ul>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Zach Alexander</p>
-    <div class="footer-links">
-      <a href="notes.html">Notes</a>
-      <a href="lab.html">Lab</a>
-      <a href="uses.html">Uses</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Zach Alexander</strong>
+        <p>Now page for active priorities, current direction, and near-term momentum.</p>
+        <p class="subtle">© <span id="year"></span> Zach Alexander</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="products/">Products</a>
+        <a href="notes.html">Notes</a>
+        <a href="lab.html">Lab</a>
+        <a href="uses.html">Uses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </footer>
 </body>

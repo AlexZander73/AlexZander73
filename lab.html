@@ -4,31 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lab — Zach Alexander</title>
-  <meta name="description" content="Experiments, case studies, and in-progress systems by Zach Alexander." />
+  <meta name="description" content="Experiments, active tracks, and implementation case notes from Zach Alexander." />
   <link rel="canonical" href="https://alexzander73.github.io/lab.html" />
-  <meta property="og:title" content="Lab" />
-  <meta property="og:description" content="Experiments, case studies, and in-progress systems by Zach Alexander." />
+  <meta property="og:title" content="Lab — Zach Alexander" />
+  <meta property="og:description" content="Experiments, active tracks, and implementation case notes from Zach Alexander." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexzander73.github.io/lab.html" />
   <meta property="og:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Lab" />
-  <meta name="twitter:description" content="Experiments, case studies, and in-progress systems by Zach Alexander." />
+  <meta name="twitter:title" content="Lab — Zach Alexander" />
+  <meta name="twitter:description" content="Experiments, active tracks, and implementation case notes from Zach Alexander." />
   <meta name="twitter:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <link rel="icon" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
-<body class="page">
+<body class="page page-lab">
   <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <a href="index.html" class="brand-link">ZA</a>
-        <span class="brand-text">Zach Alexander</span>
-      </div>
-      <nav class="nav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ZA</span>
+        <span class="brand-meta">
+          <strong>Zach Alexander</strong>
+          <span>Builder Studio</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
         <a href="projects.html">Projects</a>
         <a href="products/">Products</a>
         <a href="notes.html">Notes</a>
@@ -44,100 +48,107 @@
     </div>
   </header>
 
-  <main id="content" class="container">
-    <section class="section reveal">
-      <div class="page-intro">
-        <p class="eyebrow">Lab</p>
-        <h1>Work that is still in motion</h1>
-        <p class="lead">This is where I keep the systems that are not fully settled yet: experiments, active tracks, and the small case studies that explain how they move from idea to shipped surface.</p>
+  <main id="content" class="page-main container">
+    <section class="page-hero reveal">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Lab</p>
+          <h1>Systems in motion, before they settle.</h1>
+          <p class="lede">The Lab tracks active builds, prototype directions, and implementation questions while they are still being worked through.</p>
+        </div>
+        <aside class="hero-aside">
+          <p class="eyebrow">How to read this page</p>
+          <p>Live tracks are not polished announcements. They are practical snapshots of where effort is currently going.</p>
+        </aside>
       </div>
     </section>
 
-    <section class="section section--tint reveal">
-      <div class="section-header">
-        <h2>Active Tracks</h2>
+    <section class="section reveal" aria-labelledby="tracks-title">
+      <div class="section-head">
+        <h2 id="tracks-title">Active tracks</h2>
       </div>
       <div class="stack-grid">
-        <article class="stack-card">
+        <article class="card">
           <span class="status-badge wip">WIP</span>
-          <h3>Local LLM field kit</h3>
-          <p class="stack-copy">Private note search, small summarisation loops, and local assistant behaviors that stay narrow enough to verify.</p>
+          <h3>Local AI field kit</h3>
+          <p class="stack-copy">Narrow, private workflows for retrieval, summarization, and decision support that stay checkable.</p>
         </article>
-        <article class="stack-card">
+        <article class="card">
           <span class="status-badge public">Live</span>
-          <h3>Carpentry Companion (AU) surface</h3>
-          <p class="stack-copy">The app, support stack, privacy policy, and product pages all need to stay clear, compliant, and easy to update.</p>
+          <h3>Product support architecture</h3>
+          <p class="stack-copy">A static system for product, support, and privacy pages designed for long-term maintainability.</p>
         </article>
-        <article class="stack-card">
+        <article class="card">
           <span class="status-badge wip">WIP</span>
-          <h3>Field Notes Atlas</h3>
-          <p class="stack-copy">A place for routes, observations, maps, and short travel signals without turning note-taking into admin.</p>
+          <h3>Field notes atlas</h3>
+          <p class="stack-copy">A route-based note layer that keeps capture quick while preserving useful structure later.</p>
         </article>
-        <article class="stack-card">
+        <article class="card">
           <span class="status-badge wip">WIP</span>
-          <h3>Godot micro-worlds</h3>
-          <p class="stack-copy">Small feel-first prototypes to test motion, atmosphere, pacing, and interface tone before over-designing them.</p>
-        </article>
-        <article class="stack-card">
-          <span class="status-badge public">Live</span>
-          <h3>Static product systems</h3>
-          <p class="stack-copy">Reusable GitHub Pages structures for products, support, privacy, and catalogs that do not need a backend.</p>
-        </article>
-        <article class="stack-card">
-          <span class="status-badge wip">WIP</span>
-          <h3>Calm automations</h3>
-          <p class="stack-copy">Publishing and maintenance workflows that remove repeated effort without hiding how the system actually works.</p>
+          <h3>Physical-digital workflow bridge</h3>
+          <p class="stack-copy">Exploring tools that connect software workflows with real-world planning and making.</p>
         </article>
       </div>
     </section>
 
-    <section class="section reveal" id="case-studies">
-      <div class="section-header">
-        <h2>Case Studies</h2>
+    <section class="section reveal" id="case-studies" aria-labelledby="cases-title">
+      <div class="section-head">
+        <h2 id="cases-title">Case notes</h2>
       </div>
       <div class="case-grid">
-        <article class="case-card">
-          <h3>Carpentry Companion (AU)</h3>
-          <p class="case-copy"><strong>Problem:</strong> Give an offline-first carpentry app a public product surface that satisfies support and App Store policy needs.</p>
-          <p class="case-copy"><strong>Constraint:</strong> Keep it static, clear, and easy to update without another service.</p>
-          <p class="case-copy"><strong>Outcome:</strong> Product, support, privacy, and catalog pages now live in a structure that can scale to more apps.</p>
+        <article class="card">
+          <h3>Carpentry Companion public surface</h3>
+          <p class="case-copy"><strong>Goal:</strong> make support and compliance routes clear without introducing a heavy platform.</p>
+          <p class="case-copy"><strong>Approach:</strong> static pages, direct links, shared templates, and simple update paths.</p>
+          <p class="case-copy"><strong>Result:</strong> durable public pages that satisfy app listing needs and remain easy to edit.</p>
         </article>
-        <article class="case-card">
-          <h3>Main site rebuild</h3>
-          <p class="case-copy"><strong>Problem:</strong> Turn a clean-but-thin personal site into something with proof, personality, and visible momentum.</p>
-          <p class="case-copy"><strong>Constraint:</strong> GitHub Pages only, no frameworks, graceful external integrations.</p>
-          <p class="case-copy"><strong>Outcome:</strong> The site now carries projects, products, notes, a lab, a uses page, and richer visual structure without losing simplicity.</p>
+        <article class="card">
+          <h3>Main site redesign track</h3>
+          <p class="case-copy"><strong>Goal:</strong> turn a dense personal dashboard into a clear studio front door.</p>
+          <p class="case-copy"><strong>Approach:</strong> stronger hierarchy, calmer spacing, fewer competing sections, more authored copy.</p>
+          <p class="case-copy"><strong>Result:</strong> cleaner pathways into work, notes, and products without losing personality.</p>
         </article>
-        <article class="case-card">
-          <h3>Local AI experiments</h3>
-          <p class="case-copy"><strong>Problem:</strong> Make local-model workflows useful instead of impressive-looking.</p>
-          <p class="case-copy"><strong>Constraint:</strong> Private by default, small scope, easily checked outputs.</p>
-          <p class="case-copy"><strong>Outcome:</strong> The work is converging around narrow note, retrieval, and decision-support loops rather than broad assistant theater.</p>
+        <article class="card">
+          <h3>Project + product syncing</h3>
+          <p class="case-copy"><strong>Goal:</strong> reduce manual updates while keeping fallback behavior reliable.</p>
+          <p class="case-copy"><strong>Approach:</strong> generated JSON catalogs with static fallbacks and no framework overhead.</p>
+          <p class="case-copy"><strong>Result:</strong> listings stay fresh, and the site still degrades gracefully.</p>
         </article>
       </div>
     </section>
 
-    <section class="section section--tint reveal">
-      <div class="section-header">
-        <h2>Questions I'm Testing</h2>
-      </div>
-      <div class="card">
+    <section class="section reveal" aria-labelledby="questions-title">
+      <div class="section-band">
+        <div class="section-head">
+          <h2 id="questions-title">Current questions</h2>
+        </div>
         <ul class="focus-list">
-          <li>What parts of AI-assisted workflows are actually worth keeping local, and which parts are just novelty?</li>
-          <li>How simple can a product-support stack stay before it stops being trustworthy?</li>
-          <li>Can a travel notes system remain useful if capture is nearly frictionless and structure only appears later?</li>
-          <li>How much motion makes a site feel premium before it starts costing clarity?</li>
+          <li>What is the smallest local AI workflow that consistently saves time for real work?</li>
+          <li>How can product support surfaces stay trustworthy without becoming bureaucratic?</li>
+          <li>Where should experimentation stop and stable product behavior begin?</li>
+          <li>How do software tools better support real-world making workflows over time?</li>
         </ul>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Zach Alexander</p>
-    <div class="footer-links">
-      <a href="notes.html">Notes</a>
-      <a href="lab.html">Lab</a>
-      <a href="uses.html">Uses</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Zach Alexander</strong>
+        <p>Lab surface for in-progress tracks, implementation notes, and practical experimentation.</p>
+        <p class="subtle">© <span id="year"></span> Zach Alexander</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="products/">Products</a>
+        <a href="notes.html">Notes</a>
+        <a href="uses.html">Uses</a>
+        <a href="now.html">Now</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </footer>
 </body>

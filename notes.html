@@ -4,31 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Notes — Zach Alexander</title>
-  <meta name="description" content="Field notes, reading lines, and route archive entries by Zach Alexander." />
+  <meta name="description" content="Field notes, working ideas, and useful observations from Zach Alexander." />
   <link rel="canonical" href="https://alexzander73.github.io/notes.html" />
-  <meta property="og:title" content="Notes" />
-  <meta property="og:description" content="Field notes, reading lines, and route archive entries by Zach Alexander." />
+  <meta property="og:title" content="Notes — Zach Alexander" />
+  <meta property="og:description" content="Field notes, working ideas, and useful observations from Zach Alexander." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexzander73.github.io/notes.html" />
   <meta property="og:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Notes" />
-  <meta name="twitter:description" content="Field notes, reading lines, and route archive entries by Zach Alexander." />
+  <meta name="twitter:title" content="Notes — Zach Alexander" />
+  <meta name="twitter:description" content="Field notes, working ideas, and useful observations from Zach Alexander." />
   <meta name="twitter:image" content="https://alexzander73.github.io/assets/img/og-default.svg" />
   <link rel="icon" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
-<body class="page">
+<body class="page page-notes">
   <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <a href="index.html" class="brand-link">ZA</a>
-        <span class="brand-text">Zach Alexander</span>
-      </div>
-      <nav class="nav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ZA</span>
+        <span class="brand-meta">
+          <strong>Zach Alexander</strong>
+          <span>Builder Studio</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
         <a href="projects.html">Projects</a>
         <a href="products/">Products</a>
         <a href="notes.html" aria-current="page">Notes</a>
@@ -44,85 +48,90 @@
     </div>
   </header>
 
-  <main id="content" class="container">
-    <section class="section reveal">
-      <div class="page-intro">
-        <p class="eyebrow">Notes</p>
-        <h1>Short signals worth keeping</h1>
-        <p class="lead">Longer writing belongs on the blog. This page is for field notes, recurring themes, and small observations that shape the work before they turn into polished posts.</p>
-      </div>
+  <main id="content" class="page-main container">
+    <section class="page-hero reveal">
+      <p class="kicker">Notes</p>
+      <h1>Field observations that sharpen the build direction.</h1>
+      <p class="lede">This is the short-form layer: quick signals, framing ideas, and practical lessons that influence product decisions before they become long-form writing.</p>
     </section>
 
-    <section class="section section--tint reveal">
-      <div class="section-header">
-        <h2>Field Notes</h2>
+    <section class="section reveal" aria-labelledby="field-notes-title">
+      <div class="section-head">
+        <h2 id="field-notes-title">Recent field notes</h2>
       </div>
       <div class="note-grid">
-        <article class="mini-note" id="offline-first">
-          <time datetime="2026-03-17">Mar 17, 2026</time>
+        <article class="card" id="offline-first">
+          <p class="kicker">Mar 17, 2026</p>
           <h3>Offline-first earns trust</h3>
-          <p>Users may never say "thanks for graceful degradation," but they absolutely feel the absence of it. For site work, travel, and reference tools, reliable local behavior is part of the brand.</p>
+          <p>When tools are used on-site or in transit, graceful local behavior is part of the product promise, not an optional enhancement.</p>
         </article>
-        <article class="mini-note" id="calm-ux">
-          <time datetime="2026-03-17">Mar 17, 2026</time>
-          <h3>Calm interfaces are faster</h3>
-          <p>Premium UI is less about decoration and more about decision pressure. Less noise, more rhythm, and fewer dead-end states usually outperform flashy complexity.</p>
+        <article class="card" id="calm-ux">
+          <p class="kicker">Mar 17, 2026</p>
+          <h3>Calm interfaces move faster</h3>
+          <p>Most premium-feeling software is simply better organized: less noise, stronger hierarchy, tighter action paths.</p>
         </article>
-        <article class="mini-note" id="local-ai">
-          <time datetime="2026-03-17">Mar 17, 2026</time>
+        <article class="card" id="local-ai">
+          <p class="kicker">Mar 17, 2026</p>
           <h3>Local AI works best on narrow jobs</h3>
-          <p>The strongest use cases stay small: summarise this note set, pull likely context, draft a compact first pass. The moment the scope gets fuzzy, the value often drops.</p>
-        </article>
-        <article class="mini-note">
-          <time datetime="2026-03-17">Mar 17, 2026</time>
-          <h3>Small systems scale better than big promises</h3>
-          <p>A good static page, a readable workflow, and a few dependable files can do more long-term work than an ambitious stack nobody wants to touch six months later.</p>
+          <p>Summaries, context retrieval, and focused first drafts are where local models stay useful and verifiable.</p>
         </article>
       </div>
     </section>
 
-    <section class="section reveal">
-      <div class="section-header">
-        <h2>Reading Lines</h2>
-      </div>
-      <ul class="reading-list">
-        <li><strong>Local-first AI.</strong> I keep circling back to private workflows, narrow evaluation, and the real cost of model complexity.</li>
-        <li><strong>Interface craft.</strong> Typography, rhythm, motion, and the small decisions that make software feel composed instead of improvised.</li>
-        <li><strong>Low-maintenance systems.</strong> Static publishing, sane deployment paths, and tools that do not turn their own upkeep into a job.</li>
-        <li><strong>Travel and mapping.</strong> The overlap between route memory, place, movement, and how to make notes from the road actually usable later.</li>
-      </ul>
-    </section>
-
-    <section class="section section--tint reveal">
-      <div class="section-header">
-        <h2>Route Archive</h2>
-      </div>
-      <ul class="route-list">
-        <li><strong>Work loops.</strong> Short urban walks used to think through stuck product decisions, especially structure and hierarchy problems.</li>
-        <li><strong>Coastal resets.</strong> Routes that simplify thinking and usually lead to cutting scope rather than adding more features.</li>
-        <li><strong>Tool scouting.</strong> Hardware stores, signage systems, maps, and public interfaces that end up informing how products explain themselves.</li>
-      </ul>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-header">
-        <h2>Longer Writing</h2>
-      </div>
-      <div class="card">
-        <p>The blog is where these shorter notes expand into longer writing. The homepage pulls the latest entry automatically from the feed.</p>
-        <div class="card-actions">
-          <a class="button secondary" href="https://alexzander73.github.io/blog/" target="_blank" rel="noopener">Visit the blog</a>
+    <section class="section reveal" aria-labelledby="idea-bank-title">
+      <div class="section-band">
+        <div class="section-head">
+          <h2 id="idea-bank-title">Working idea bank</h2>
         </div>
+        <ul class="reading-list">
+          <li><strong>Durable publishing:</strong> static structures that remain easy to update months later.</li>
+          <li><strong>Interface rhythm:</strong> using spacing and typography to reduce cognitive drag.</li>
+          <li><strong>Practical autonomy:</strong> products that stay functional without perfect connectivity.</li>
+          <li><strong>Software to physical bridge:</strong> tools that support real-world workflows, not only screen-time workflows.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="next-writing-title">
+      <div class="section-head">
+        <h2 id="next-writing-title">Where these notes go next</h2>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Build journal</h3>
+          <p>Active implementation tracks and in-progress systems are logged in the Lab.</p>
+          <div class="card-actions">
+            <a class="button ghost" href="lab.html">Open Lab</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Long-form writing</h3>
+          <p>Longer essays and travel-driven reflections are published on the blog.</p>
+          <div class="card-actions">
+            <a class="button ghost" href="https://alexzander73.github.io/blog/" target="_blank" rel="noopener">Visit Blog</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Zach Alexander</p>
-    <div class="footer-links">
-      <a href="notes.html">Notes</a>
-      <a href="lab.html">Lab</a>
-      <a href="uses.html">Uses</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Zach Alexander</strong>
+        <p>Notes surface for working ideas, compact insights, and practical build signals.</p>
+        <p class="subtle">© <span id="year"></span> Zach Alexander</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="products/">Products</a>
+        <a href="lab.html">Lab</a>
+        <a href="uses.html">Uses</a>
+        <a href="now.html">Now</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </footer>
 </body>
