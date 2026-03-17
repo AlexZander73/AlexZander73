@@ -1,0 +1,158 @@
+{
+  "product": {
+    "slug": "tuxborn-wiki",
+    "name": "Tuxborn Wiki",
+    "tagline": "A structured field guide for the Tuxborn Skyrim modpack.",
+    "status": "Active",
+    "category": "knowledge/reference tool",
+    "framing": "docs-forward product page",
+    "platforms": [
+      "Web",
+      "GitHub Pages",
+      "GitHub Wiki"
+    ],
+    "supportUrl": "/support/tuxborn-wiki/",
+    "privacyUrl": "/privacy/tuxborn-wiki/",
+    "primaryCtaLabel": "Open Tuxborn Wiki",
+    "primaryCtaUrl": "https://github.com/Omni-guides/Tuxborn/wiki/Home",
+    "secondaryLinks": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/Omni-guides/Tuxborn"
+      },
+      {
+        "label": "Installation Guide",
+        "url": "https://github.com/Omni-guides/Tuxborn"
+      },
+      {
+        "label": "FAQ Index",
+        "url": "https://github.com/Omni-guides/Tuxborn/wiki/Frequently-Asked-Questions"
+      }
+    ]
+  },
+  "hero": {
+    "headline": "The Tuxborn field atlas for install, playthrough planning, and troubleshooting.",
+    "subhead": "This site mirrors and organizes the Tuxborn GitHub Wiki so players can move quickly between setup guides, quest references, follower notes, and evolving FAQs."
+  },
+  "summary": "Tuxborn Wiki is a maintained reference layer for a large Skyrim modpack, with indexed gameplay topics, compatibility guidance, and checklist-driven progress tracking.",
+  "audience": [
+    "Players installing Tuxborn for the first time",
+    "Returning players planning a new run",
+    "Steam Deck and handheld users managing profile and settings differences",
+    "Community helpers answering support questions"
+  ],
+  "coreProblems": [
+    "Critical setup and profile choices are easy to miss in a large modpack",
+    "Quest and content routing can become fragmented across scattered notes",
+    "Support channels repeatedly receive the same foundational questions",
+    "Players need a practical way to track completion across broad content"
+  ],
+  "features": [
+    {
+      "title": "Wiki-first publishing model",
+      "summary": "Maintainers keep authoring in GitHub Wiki markdown while this site syncs and publishes a clean static mirror."
+    },
+    {
+      "title": "Topic-indexed navigation",
+      "summary": "Major areas like Getting Started, Content and Quests, Followers, FAQ, and Modding are organized as navigable hubs."
+    },
+    {
+      "title": "Checklist dashboard",
+      "summary": "A synced spreadsheet-backed checklist is rendered into searchable tables with local completion tracking."
+    },
+    {
+      "title": "Automated rebuild pipeline",
+      "summary": "The site rebuilds on push, manual trigger, and scheduled runs so wiki edits can flow to deployment without manual site editing."
+    }
+  ],
+  "workflows": [
+    {
+      "title": "Install and configure",
+      "summary": "Start from installation and profile guides, then branch to device-specific notes such as handheld support and save-safe profile usage."
+    },
+    {
+      "title": "Plan a playthrough",
+      "summary": "Use quest and content indices to find level recommendations, mod starts, travel methods, follower fit, and faction-related notes."
+    },
+    {
+      "title": "Resolve known friction",
+      "summary": "Check FAQ and known bug pages first, then use support links when an issue is not already documented."
+    }
+  ],
+  "proofPoints": [
+    {
+      "label": "Content footprint",
+      "value": "100+ pages",
+      "note": "Synced from the Tuxborn GitHub Wiki into the local docs set."
+    },
+    {
+      "label": "Update cadence",
+      "value": "Push + manual + weekly",
+      "note": "Build workflow is configured for routine refreshes from wiki changes."
+    },
+    {
+      "label": "Source model",
+      "value": "Wiki is source of truth",
+      "note": "Contributors keep editing markdown in familiar GitHub wiki flows."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Where should edits be made?",
+      "answer": "Content edits are made in the upstream GitHub Wiki. This site is generated from that source."
+    },
+    {
+      "question": "Is this only for one platform?",
+      "answer": "No. The docs include Steam Deck and broader handheld guidance plus general PC-focused material."
+    },
+    {
+      "question": "How is checklist progress stored?",
+      "answer": "Checklist completion uses browser-local storage in the generated static pages."
+    },
+    {
+      "question": "What if a page seems out of date?",
+      "answer": "Check the upstream wiki first, then trigger a rebuild so the static mirror catches up."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/tuxborn-atlas-preview.svg",
+      "alt": "Illustrated preview panel representing the Tuxborn Wiki content map",
+      "caption": "Section map preview used for catalog cards and social metadata."
+    }
+  ],
+  "catalog": {
+    "title": "Tuxborn Wiki",
+    "blurb": "A maintained navigation layer for installing, understanding, and completing content in the Tuxborn modpack.",
+    "image": "./assets/tuxborn-atlas-preview.svg",
+    "platforms": "Web reference"
+  },
+  "notes": {
+    "repoArchetypeReasoning": [
+      "README describes a MkDocs site generated from a GitHub Wiki source.",
+      "Docs folder contains page-indexed reference content, not application runtime code.",
+      "Scripts focus on wiki syncing, link normalization, checklist ingestion, and static deploy workflow."
+    ],
+    "safeSourcesUsed": [
+      "README.md",
+      "mkdocs.yml",
+      "docs/index.md",
+      "docs/Getting-started.md",
+      "docs/Installation-and-config-guides.md",
+      "docs/Content-and-quests.md",
+      "docs/Followers.md",
+      "docs/Frequently-Asked-Questions.md",
+      "docs/checklist/index.md",
+      "LICENSE-NOTE.md"
+    ],
+    "assumptions": [
+      "Support and privacy URLs are mapped to central-site placeholders for integration.",
+      "Catalog preview art is generated for this export because no dedicated product screenshot asset exists in-repo."
+    ],
+    "missingButUsefulAssets": [
+      "Official Tuxborn logo mark with usage-safe dimensions",
+      "One or two maintained screenshots of the live documentation experience",
+      "Explicit support and privacy page URLs for central site metadata"
+    ]
+  }
+}

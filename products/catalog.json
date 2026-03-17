@@ -90,6 +90,15 @@
     "platforms": "Web"
   },
   {
+    "slug": "tuxborn-wiki",
+    "title": "Tuxborn Wiki | Field Atlas Export",
+    "blurb": "A maintained navigation layer for installing, understanding, and completing content in the Tuxborn modpack.",
+    "image": "/products/tuxborn-wiki/assets/tuxborn-atlas-preview.svg",
+    "url": "/products/tuxborn-wiki/",
+    "support_url": "/support/tuxborn-wiki/",
+    "platforms": "Web reference"
+  },
+  {
     "slug": "word-search-atlas",
     "title": "Word Search Atlas",
     "blurb": "A travel-themed word search built around globe routes, local progress, and quiet offline play.",
