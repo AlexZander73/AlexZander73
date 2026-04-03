@@ -2,7 +2,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 
 const THEME_KEY = 'theme';
 const PALETTE_KEY = 'palette';
-const DEFAULT_PALETTE = 'earthy';
+const DEFAULT_PALETTE = 'graphite';
 const PALETTE_OPTIONS = [
   { value: 'earthy', label: 'Earthy Luxe' },
   { value: 'coastal', label: 'Coastal Air' },
