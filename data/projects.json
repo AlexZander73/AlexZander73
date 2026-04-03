@@ -52,5 +52,14 @@
     "github": "",
     "demo": "",
     "featured": false
+  },
+  {
+    "title": "Security Research Website",
+    "description": "A security-focused advisory and blog website for scam awareness, safer habits, and practical threat notes.",
+    "status": "public",
+    "tags": ["security", "advisory", "scam-awareness", "blog"],
+    "github": "",
+    "demo": "https://alexzander73.github.io/SecurityResearchWebsite/index.html",
+    "featured": true
   }
 ]
