@@ -1,12 +1,25 @@
 [
   {
+    "name": "DragonTreasury",
+    "html_url": "https://github.com/AlexZander73/DragonTreasury",
+    "description": "An interactive 2.5D dragon cave archive where every item in the treasure pile represents a project, product, experiment, note, or relic.",
+    "homepage": null,
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "pushed_at": "2026-04-12T00:20:36Z",
+    "topics": [],
+    "open_issues_count": 0,
+    "pages_url": "https://alexzander73.github.io/DragonTreasury/",
+    "pages_status": "public"
+  },
+  {
     "name": "AlexZander73.github.io",
     "html_url": "https://github.com/AlexZander73/AlexZander73.github.io",
     "description": "I build calm, durable software that feels premium and stays lightweight over time. My work blends AI-assisted tools, local LLM experiments, and automation wi...",
     "homepage": null,
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2026-04-11T06:07:49Z",
+    "pushed_at": "2026-04-11T06:21:52Z",
     "topics": [],
     "open_issues_count": 0,
     "pages_url": "https://alexzander73.github.io/",
@@ -23,19 +36,6 @@
     "topics": [],
     "open_issues_count": 0,
     "pages_url": "https://alexzander73.github.io/SecurityResearchWebsite/",
-    "pages_status": "public"
-  },
-  {
-    "name": "DragonTreasury",
-    "html_url": "https://github.com/AlexZander73/DragonTreasury",
-    "description": "An interactive 2.5D dragon cave archive where every item in the treasure pile represents a project, product, experiment, note, or relic.",
-    "homepage": null,
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "pushed_at": "2026-03-24T07:25:37Z",
-    "topics": [],
-    "open_issues_count": 0,
-    "pages_url": "https://alexzander73.github.io/DragonTreasury/",
     "pages_status": "public"
   },
   {
