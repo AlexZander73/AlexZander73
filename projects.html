@@ -68,28 +68,26 @@
     </section>
 
     <section class="section reveal" aria-labelledby="filters-title">
-      <div class="section-head">
-        <h2 id="filters-title">Filter the project list</h2>
-      </div>
-      <div class="panel">
+      <div class="panel projects-shell">
+        <div class="section-head">
+          <h2 id="filters-title">Filter the project list</h2>
+        </div>
         <div class="filters">
           <div id="project-languages" class="filter-group" aria-label="Language filters"></div>
           <div id="project-tags" class="filter-group" aria-label="Tag filters"></div>
           <div id="project-status" class="filter-group" aria-label="Status filters"></div>
           <button class="chip" data-clear-filters>Clear filters</button>
         </div>
-      </div>
-    </section>
-
-    <section class="section reveal" aria-labelledby="results-title">
-      <div class="section-head">
-        <h2 id="results-title">Current results</h2>
-      </div>
-      <div id="projects" class="card-grid grid" aria-live="polite"></div>
-      <div id="projects-empty" class="card" style="display: none;">
-        <p class="subtle">No projects match those filters right now.</p>
-        <div class="card-actions">
-          <button class="button ghost" data-clear-filters>Clear filters</button>
+        <div class="projects-divider" aria-hidden="true"></div>
+        <div class="section-head results-head">
+          <h2 id="results-title">Current results</h2>
+        </div>
+        <div id="projects" class="card-grid grid" aria-live="polite"></div>
+        <div id="projects-empty" class="card" style="display: none;">
+          <p class="subtle">No projects match those filters right now.</p>
+          <div class="card-actions">
+            <button class="button ghost" data-clear-filters>Clear filters</button>
+          </div>
         </div>
       </div>
     </section>
