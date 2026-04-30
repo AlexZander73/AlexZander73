@@ -1,4 +1,4 @@
-# Zach Alexander
+# Zach Mackay
 
 I build calm, durable software that feels premium and stays lightweight over time. My work blends AI-assisted tools, local LLM experiments, and automation with a focus on clarity, longevity, and quiet performance.
 
