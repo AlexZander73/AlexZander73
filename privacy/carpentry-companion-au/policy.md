@@ -1,75 +1,64 @@
-# Privacy Policy – Carpentry Companion (AU)
+# Privacy Policy - Carpentry Companion
 
-Last updated: April 8, 2026
+Last updated: June 20, 2026
 
-Carpentry Companion (AU) is operated by the app publisher of this app ("we", "us", "our").
+Carpentry Companion is operated by the app publisher ("we", "us", "our").
 
 ## Summary
 
-- The app is designed to work offline.
-- Job data (notes, calculations, presets, materials, attachments) is stored locally on your device.
-- We do not sell personal data.
-- We do not run third-party advertising SDKs.
-- We do not run third-party analytics SDKs.
+- The app is designed to work offline and does not require an account for core features.
+- Project and job information is stored locally on your device by default.
+- We do not operate an app data server, sell personal data, or include advertising or third-party analytics SDKs.
+- Apple services are used only when you choose Sign in with Apple, iCloud backup, or an App Store purchase.
 
-## Information We Process
+## Information Processed on Your Device
 
-### 1) Data stored on your device
-The app stores the following locally on your device for core functionality:
+The app stores information needed for its features, including:
 
-- jobs, notes, calculations, presets, materials, reference bookmarks
-- attachments you choose to add (photos/files)
-- app settings and favorites
+- jobs, project phases, tasks, spaces, notes, site-log entries, calculations, presets, materials, and reference bookmarks
+- photos and files you choose to attach
+- settings, favourites, recents, lesson progress, onboarding progress, and locally stored usage counters
+- purchase entitlement status returned by Apple StoreKit
 
-This local data is not automatically uploaded to our servers unless you choose to export or share it.
+This information remains on your device unless you explicitly export, share, or upload a backup. Local usage counters are used only to improve the in-app experience and are not transmitted to us.
 
-### 2) Subscription and purchase data
-If you use in-app purchases, subscription and purchase handling is provided by Apple StoreKit only.
+## Sign in with Apple
 
-The app processes the following for subscription and purchase functionality:
+Sign in with Apple is optional. If you use it, Apple may provide an Apple user identifier and, on first authorization, a name or relay email address. The app stores the available values locally so it can show connection status. We do not send these values to our own servers. Signing out removes the locally stored values from the app.
 
-- purchase status and entitlement state
-- product identifiers and transaction metadata
-- technical/device metadata required for billing operations
+See [Apple Privacy](https://www.apple.com/legal/privacy/) for information about Apple's processing.
 
-For details, see:
+## iCloud Backups
 
-- Apple Privacy: https://www.apple.com/legal/privacy/
+iCloud backup is optional and user initiated. When you choose to upload a backup, the backup may contain your jobs, project details, calculations, materials, attachments, and settings. It is stored in the app's iCloud container associated with your Apple account. We do not receive or control that backup. Apple's iCloud terms, retention, security, and account controls apply.
 
-### 3) Network content
-When online, the app may request:
+## Purchases and Subscriptions
 
-- externally hosted reference images/media used in content
-- official standards/reference links you open
+Purchases are processed by Apple using StoreKit. The app receives product identifiers, entitlement state, expiration information, and transaction results needed to unlock Pro features. We do not receive your payment card or banking information.
 
-Those services may receive standard network information (for example, IP address and user-agent) as part of normal web requests.
+## Network Requests
 
-## How We Use Information
-We process information to:
-
-- provide calculations, job workflows, and saved content
-- manage subscriptions and restore purchases
-- enable optional export/backup actions initiated by you
+When online, the app may request externally hosted content images or open links you select, including support, privacy, and official reference pages. Those providers may receive normal network information such as an IP address and user-agent under their own privacy policies.
 
 ## Sharing
-We do not sell personal information.  
-We only share data with third parties as needed to provide core app services (for example, Apple in-app purchase infrastructure through StoreKit).
 
-## Data Retention and Control
+We do not sell personal information. Information leaves the device only when you initiate an Apple service, export, share, link, or backup action, or when Apple processes an App Store purchase.
 
-- Local app data remains on your device until you delete it, uninstall the app, or overwrite it with a restore.
-- You can export and restore backups from within the app.
-- You can request deletion by removing app data or uninstalling the app.
+## Retention and Control
+
+- Local app data remains until you delete it, restore over it, or uninstall the app.
+- Exported files remain wherever you choose to save or share them.
+- iCloud backups remain under your Apple account and can be managed using Apple's iCloud controls.
+- Sign in with Apple authorization can be managed from your Apple account settings.
 
 ## Children
+
 The app is not directed to children under 13.
 
-## Changes to This Policy
-We may update this policy from time to time. Changes will be posted at this URL with an updated "Last updated" date.
+## Changes
+
+We may update this policy as the app changes. The current version will be published at the Privacy Policy URL with a revised date.
 
 ## Contact
+
 For privacy questions, contact: index-hearty6c@icloud.com
-
----
-
-Study tool only, not professional advice. Always verify against the current NCC/Standards and local regulations.
